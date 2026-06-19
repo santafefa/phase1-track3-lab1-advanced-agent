@@ -1,0 +1,2045 @@
+{
+  "meta": {
+    "dataset": "hotpot_100.json",
+    "mode": "mock",
+    "num_records": 200,
+    "agents": [
+      "react",
+      "reflexion"
+    ]
+  },
+  "summary": {
+    "react": {
+      "count": 100,
+      "em": 0.85,
+      "avg_attempts": 1,
+      "avg_token_estimate": 3504.72,
+      "avg_latency_ms": 3775.41
+    },
+    "reflexion": {
+      "count": 100,
+      "em": 0.99,
+      "avg_attempts": 1.19,
+      "avg_token_estimate": 4720.35,
+      "avg_latency_ms": 6862.35
+    },
+    "delta_reflexion_minus_react": {
+      "em_abs": 0.14,
+      "attempts_abs": 0.19,
+      "tokens_abs": 1215.63,
+      "latency_abs": 3086.94
+    }
+  },
+  "failure_modes": {
+    "wrong_final_answer": 16
+  },
+  "examples": [
+    {
+      "qid": "5a807181554299485f5985ec",
+      "agent_type": "react",
+      "gold_answer": "Morning Edition",
+      "predicted_answer": "Bob Edwards was the original host of National Public Radio\u2019s flagship program **\u201cMorning\u202fEdition,\u201d** which was later hosted by\u202fRen\u00e9e\u202fMontagne.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ed7b455429917b4a5bdd1",
+      "agent_type": "react",
+      "gold_answer": "Guadalupe \"Lupe\" Ontiveros",
+      "predicted_answer": "The sitcom **\u201cRob\u201d** starred American actress **Lu\u202fPe\u202fOntiveros**, who is best known for playing Yolanda\u202fSald\u00edvar in the film *Selena*.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a800ca555429969796c1bac",
+      "agent_type": "react",
+      "gold_answer": "Plato",
+      "predicted_answer": "The philosopher is **Socrates**, and he is known chiefly from the writings of his student **Plato**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae675245542991bbc9760dc",
+      "agent_type": "react",
+      "gold_answer": "Merovech",
+      "predicted_answer": "The father of Childericus (Childeric\u202fI) was **Merovech**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab1e984554299340b525428",
+      "agent_type": "react",
+      "gold_answer": "Gulangyu",
+      "predicted_answer": "Gulangyu is larger.  \nThe description of Gulangyu states that the island covers about **2\u202fkm\u00b2**.  \nThe Asante Traditional Buildings are a collection of **13 individual buildings**; no overall area is given, and the site is far smaller than a 2\u2011km\u00b2 island. Therefore, in terms of physical size, Gulangyu exceeds the Asante Traditional Buildings.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab21c3b554299722f9b4cb4",
+      "agent_type": "react",
+      "gold_answer": "American",
+      "predicted_answer": "The author,\u202fSharyn\u202fMcCrumb, is an **American citizen**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae3d6bd5542991a06ce9a2b",
+      "agent_type": "react",
+      "gold_answer": "10 Years",
+      "predicted_answer": "The album **\u201cFrom Birth to Burial\u201d** was released by the Knoxville\u2011originating American band **10\u202fYears**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80a7f6554299485f598680",
+      "agent_type": "react",
+      "gold_answer": "Dallas",
+      "predicted_answer": "They founded Neiman\u202fMarcus in **Dallas, Texas** in 1907.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac415445542995c82c4acb7",
+      "agent_type": "react",
+      "gold_answer": "Esther \"Essie\" Davis",
+      "predicted_answer": "Essie\u202fDavis played Amelia\u202fVanek.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac43e0f554299076e296d8e",
+      "agent_type": "react",
+      "gold_answer": "China",
+      "predicted_answer": "Both Dafeng District and Jixi are located in the People\u2019s Republic of China.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7622d75542994ccc9186f1",
+      "agent_type": "react",
+      "gold_answer": "\"Leni\" Riefenstahl",
+      "predicted_answer": "Leni\u202fRiefenstahl was born earlier. She was born on\u202f22\u202fAugust\u202f1902, whereas Garry\u202fMarshall was born later, on\u202f13\u202fNovember\u202f1934.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74512b55429974ef308bd5",
+      "agent_type": "react",
+      "gold_answer": "Hachette Filipacchi",
+      "predicted_answer": "The film magazine \u201cPremiere,\u201d where Peter\u202fBiskind served as executive editor from 1986 to 1996, was published by **Hachette\u202fFilipacchi\u202fMedia\u202fU.S.**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab5062f55429942dd415fd1",
+      "agent_type": "react",
+      "gold_answer": "$60 million",
+      "predicted_answer": "The film is **ParaNorman**, and its budget was **$60\u202fmillion**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7f35015542992e7d278c8a",
+      "agent_type": "react",
+      "gold_answer": "1754",
+      "predicted_answer": "The college\u2014Columbia College, where Carl (Cal)\u202fHovde served as dean\u2014was founded in **1754**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae72c1e554299572ea54754",
+      "agent_type": "react",
+      "gold_answer": "Faraway, So Close!",
+      "predicted_answer": "The sequel is **\u201cFaraway,\u202fSo\u202fClose!\u201d** (1993), which follows the German romantic\u2011fantasy film *Wings of Desire* starring Bruno\u202fGanz and Solveig Dommartin.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abc2e1c554299700f9d7806",
+      "agent_type": "react",
+      "gold_answer": "4",
+      "predicted_answer": "Johan\u202fMj\u00e4llby was born on\u202f9\u202fFebruary\u202f1971 and Neil\u202fLennon on\u202f25\u202fJune\u202f1971.  \nThe interval between the two birthdays is:\n\n- 9\u202fFeb \u2192 9\u202fJun\u202f=\u202f4\u202fmonths  \n- 9\u202fJun \u2192 25\u202fJun\u202f=\u202f16\u202fdays (\u2248\u202f0.5\u202fmonth)\n\nSo they are roughly **4\u00bd\u202fmonths apart** in age (about four months and a half).",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae4988655429970de88d9c1",
+      "agent_type": "react",
+      "gold_answer": "The The",
+      "predicted_answer": "The post\u2011punk band is **The\u202fThe**. Boy Hits\u202fCar is an alternative\u2011metal/rock group, not a post\u2011punk act.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7905f555429974737f7947",
+      "agent_type": "react",
+      "gold_answer": "second largest",
+      "predicted_answer": "Driss\u202fLachgar was born in Rabat, which is Morocco\u2019s capital and its **second\u2011largest city**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a881cbb55429938390d3ee7",
+      "agent_type": "react",
+      "gold_answer": "Hellenism",
+      "predicted_answer": "The rectory is Greek\u2011Revival; that style itself grew out of the earlier **Neoclassical (Greek\u2011inspired) architectural tradition**.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae796af554299540e5a5623",
+      "agent_type": "react",
+      "gold_answer": "Aden",
+      "predicted_answer": "The capital was temporarily moved to the port city of **Aden**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a733c925542991f9a20c6b7",
+      "agent_type": "react",
+      "gold_answer": "cocktails",
+      "predicted_answer": "Both the Polar\u202fBear and the Daiquiri are **cocktails**\u2014mixed alcoholic drinks.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7cea355429952e35ea9c1",
+      "agent_type": "react",
+      "gold_answer": "Netflix",
+      "predicted_answer": "The series is **\u201cEasy.\u201d**",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adcca7f5542994ed6169c06",
+      "agent_type": "react",
+      "gold_answer": "1961",
+      "predicted_answer": "The drummer on\u202f*Angel of Retribution*\u202f\u2014\u202fScott\u202fTravis \u2014 was born in **1961**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a77d12755429967ab1052b8",
+      "agent_type": "react",
+      "gold_answer": "Jaap Speyer",
+      "predicted_answer": "Jaap\u202fSpeyer was born first; he was born in\u202f1891, whereas Bruce\u202fConner was born in\u202f1933.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1465855429920d5234373",
+      "agent_type": "react",
+      "gold_answer": "New York Yankees",
+      "predicted_answer": "Berk Communication and Marketing Group is best known for representing pitcher\u202fCC\u202fSabathia, who pitches for the **New\u202fYork\u202fYankees**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1bf46554299234fd042e6",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Both **Jack and Coke** (Jack\u202fDaniel\u2019s whiskey mixed with Coca\u2011Cola) and the **Clover Club Cocktail** (gin, lemon juice, raspberry syrup, and egg white) are classified as cocktails.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae195bf5542997b2ef7d207",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Both the Galata Tower and the S\u00fcleymaniye Mosque are situated in Istanbul, Turkey.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f2ba155429918e830d1b9",
+      "agent_type": "react",
+      "gold_answer": "Hong Kong Disneyland",
+      "predicted_answer": "The theme park was **Hong\u202fKong\u202fDisneyland**, which opened on 12\u202fSeptember\u202f2005 and was viewed as a competitor to Ocean\u202fPark Hong\u202fKong.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3357d554299166977419d",
+      "agent_type": "react",
+      "gold_answer": "London",
+      "predicted_answer": "The parent company of Sterlite Industries, Vedanta\u202fResources\u202fplc, is headquartered in **London**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac42a64554299076e296d7b",
+      "agent_type": "react",
+      "gold_answer": "1927",
+      "predicted_answer": "Clipper\u202fCargo\u2019s parent, Pan American World Airways, was founded in **1927**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae361805542992e3233c3c9",
+      "agent_type": "react",
+      "gold_answer": "Georgetown University",
+      "predicted_answer": "Greg\u202fMonroe, the last Pistons player to wear Dennis\u202fRodman\u2019s retired #10, attended **Georgetown University**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a78c66e55429974737f787b",
+      "agent_type": "react",
+      "gold_answer": "Wu-Tang Clan",
+      "predicted_answer": "Masta\u202fKilla released **\u201cSelling My Soul\u201d as a Wu\u2011Tang Clan member** \u2013 the album came out on the Nature\u202fSounds Records and Royal\u202fLion\u202fMusic labels.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f25ed5542997ba9cb31f0",
+      "agent_type": "react",
+      "gold_answer": "The bald eagle",
+      "predicted_answer": "The bird of prey that can be found around Brackendale is the **bald eagle**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a848a685542997b5ce3feae",
+      "agent_type": "react",
+      "gold_answer": "President John F. Kennedy",
+      "predicted_answer": "The wife of the 1972 Democratic vice\u2011presidential nominee (Sargent\u202fShriver) was **Eunice\u202fKennedy\u202fShriver**. Her brother was **John\u202fF.\u202fKennedy**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd0553554299700f9d7963",
+      "agent_type": "react",
+      "gold_answer": "Marks and Spencer plc",
+      "predicted_answer": "Archie\u202fNorman is set to succeed Robert\u202fSwannell as chairman of **Marks\u202f&\u202fSpencer**, the British multinational retailer headquartered in the City of Westminster, London.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae07b0155429945ae95935d",
+      "agent_type": "react",
+      "gold_answer": "Paul Thomas Mann",
+      "predicted_answer": "Thomas\u202fMann was the German novelist. David\u202fGuterson is American.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae6545f5542991bbc9760c2",
+      "agent_type": "react",
+      "gold_answer": "Dylan O'Brien",
+      "predicted_answer": "The co\u2011star is **Maurice\u202fCostello**.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a83eaae55429933447460b4",
+      "agent_type": "react",
+      "gold_answer": "relations between Switzerland and the European Union",
+      "predicted_answer": "The February\u202f2014 vote was a **Swiss federal popular initiative \u2013 the \u201cagainst mass immigration\u201d popular initiative**. It sought to re\u2011impose immigration quotas that had existed before the bilateral treaties with the EU framed the current free\u2011movement regime.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7663665542992d0ec060d3",
+      "agent_type": "react",
+      "gold_answer": "The 2018 Texas gubernatorial election",
+      "predicted_answer": "The United States Senate election in Texas (2018) is held on the same day as the **2018 Texas gubernatorial election**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a88ac3d554299206df2b328",
+      "agent_type": "react",
+      "gold_answer": "Dutch",
+      "predicted_answer": "Both Eric\u202fLucassen and the Party for Freedom originate from the **Netherlands**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab84bab55429934fafe6d49",
+      "agent_type": "react",
+      "gold_answer": "Raimond Gaita",
+      "predicted_answer": "The film\u202f*Romulus, My Father*\u202fwas based on the memoir written by **Raimond\u202fGaita**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add1c485542992c1e3a253d",
+      "agent_type": "react",
+      "gold_answer": "wineries",
+      "predicted_answer": "A notable and popular industry in the neighbourhood around Willow\u202fVale (the Southern Highlands area near Mittagong) is winemaking \u2013 the region is known for its many wineries and cellar\u2011door wine tourism.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae520315542993aec5ec152",
+      "agent_type": "react",
+      "gold_answer": "Taylor Swift",
+      "predicted_answer": "Liz\u202fRose co\u2011wrote those songs with **Taylor\u202fSwift**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8887a055429938390d3f72",
+      "agent_type": "react",
+      "gold_answer": "Rocky Boy's Indian Reservation",
+      "predicted_answer": "The reservation is **Rocky\u202fBoy\u2019s Indian Reservation**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abc36cc55429959677d6a50",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. In 1998\u202fLife magazine was being issued on a monthly schedule (it was a monthly from 1978 to 2000), and Strictly\u202fSlots, which was founded in 1998, is described as a monthly magazine.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae08a0455429924de1b70fc",
+      "agent_type": "react",
+      "gold_answer": "Enigma",
+      "predicted_answer": "The German project is **Enigma** \u2013 its song \u201cAmen\u201d features vocals by the Silverdale\u2011based duo Aquilo.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1f3df554299234fd04364",
+      "agent_type": "react",
+      "gold_answer": "at age 27",
+      "predicted_answer": "The American rock singer\u202f\u2014\u202fJanis\u202fJoplin\u202f\u2014\u202fdied on **October\u202f4,\u202f1970**.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae129115542990adbacf722",
+      "agent_type": "react",
+      "gold_answer": "Francis McPeake",
+      "predicted_answer": "Both \u201cA\u202fPair\u202fof\u202fBrown\u202fEyes\u201d and \u201cWild\u202fMountain\u202fThyme\u201d use the melody of the folk tune written by **Francis\u202fMcPeake** (the McPeake family\u2019s version of \u201cWild\u202fMountain\u202fThyme\u201d).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adf9d135542995534e8c817",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No.\u202fDes\u202fMoines International Airport is a regional airport that offers connections to major hubs, but it is not itself a major airline hub.\u202fGrand Canyon National\u202fPark Airport is a small, tourism\u2011focused field used mainly for scenic tours and limited charter/scheduled service, and it is not a hub for any major airline either.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae470815542996836b02c9f",
+      "agent_type": "react",
+      "gold_answer": "The Virgin Queen",
+      "predicted_answer": "The monarch was **Elizabeth\u202fI**, whose familiar nickname was **\u201cGood Queen\u202fBess.\u201d**",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a72ac8a5542992359bc3164",
+      "agent_type": "react",
+      "gold_answer": "The Dundee Canal",
+      "predicted_answer": "The Lake\u202fWorth\u202fLagoon required the more intensive man\u2011made barriers. Unlike the Dundee Canal\u2014which was simply a straight industrial canal\u2014Lake\u202fWorth\u202fLagoon is bounded by barrier beaches and is accessed via two permanent, engineered inlets that were cut through those natural barriers. These artificial cuts represent a far greater amount of constructed barrier work than anything required for the Dundee Canal.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae406245542995dadf242e2",
+      "agent_type": "react",
+      "gold_answer": "20",
+      "predicted_answer": "Marion\u202fGreene worked as a health\u2011policy analyst for St.\u202fJude\u202fMedical, which had **more than\u202f20 principal operations worldwide**.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7db62d5542997cc2c4747c",
+      "agent_type": "react",
+      "gold_answer": "Baden-W\u00fcrttemberg",
+      "predicted_answer": "Karl\u202fJulius\u202fPerleb was born in Konstanz, which today lies in the German state of **Baden\u2011W\u00fcrttemberg**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7c5ef5542993210983f44",
+      "agent_type": "react",
+      "gold_answer": "Gainesville, Florida",
+      "predicted_answer": "The band Against\u202fMe! is from **Gainesville, Florida**, a town in North\u202fCentral Florida.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abe65e25542993f32c2a101",
+      "agent_type": "react",
+      "gold_answer": "Stanford University",
+      "predicted_answer": "The university was **Stanford University**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab5052a5542990594ba9ccf",
+      "agent_type": "react",
+      "gold_answer": "Gabriella Montez",
+      "predicted_answer": "The new permanent judge, Vanessa\u202fHudgens, portrayed **Gabriella\u202fMontez** in the *High\u202fSchool\u202fMusical* films.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae0c1be5542993d6555ec42",
+      "agent_type": "react",
+      "gold_answer": "Academy Award for Best Art Direction",
+      "predicted_answer": "The 2008 David\u202fFincher\u2011directed romantic drama **The\u202fCurious\u202fCase\u202fof\u202fBenjamin\u202fButton** did not win any directing award (no directing honor is listed for the film in the provided information).",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a78f89055429974737f792b",
+      "agent_type": "react",
+      "gold_answer": "physics",
+      "predicted_answer": "John\u202fvon\u202fNeumann\u2019s\u202f*Mathematical Foundations of Quantum Mechanics* dives into the **mathematical foundations of quantum theory**\u2014in particular the functional\u2011analysis framework of Hilbert spaces and operators that underlies quantum mechanics.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a75e814554299109176e5c7",
+      "agent_type": "react",
+      "gold_answer": "Gregg Harper",
+      "predicted_answer": "The Republican Chairman born on June\u202f1,\u202f1956 is **Gregg\u202fHarper**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac4fbe255429924173fb53b",
+      "agent_type": "react",
+      "gold_answer": "Jeffrey Adam \"Duff\" Goldman",
+      "predicted_answer": "Duff Goldman.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac25fa955429951e9e6858c",
+      "agent_type": "react",
+      "gold_answer": "design, development, manufacture",
+      "predicted_answer": "The holding company\u202f\u2014\u202fJaguar\u202fLand\u202fRover\u202fAutomotive\u202fPLC\u202f\u2014\u202fowns Jaguar\u202fLand\u202fRover Ltd., whose principal activity is the **design, development, manufacture and sale of vehicles bearing the Jaguar and Land\u202fRover (including Range\u202fRover) marques**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a735c3a55429901807daff7",
+      "agent_type": "react",
+      "gold_answer": "mathematician",
+      "predicted_answer": "Both Nikolay\u202fMitrofanovich\u202fKrylov and Anatoly\u202fFomenko held the academic title **professor**.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7e6f295542991319bc94b1",
+      "agent_type": "react",
+      "gold_answer": "Pope John X",
+      "predicted_answer": "Pope\u202fJohn\u202fX bestowed the title \u201cpatricia of Rome\u201d on Marozia, the mother of Alberic\u202fII of\u202fSpoleto.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a88fa1c5542995153361219",
+      "agent_type": "react",
+      "gold_answer": "1966",
+      "predicted_answer": "Barry\u202fMurphy earned his sole cap under Jack\u202fCharlton, who was a member of England\u2019s World Cup\u2011winning side in **1966**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adfa1f9554299025d62a308",
+      "agent_type": "react",
+      "gold_answer": "William Maldon \"Bill\" Woodfull",
+      "predicted_answer": "The captain was **William\u202fMaldon\u202fWoodfull** (commonly known as Bill Woodfull).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7473f5542991bbc9761d2",
+      "agent_type": "react",
+      "gold_answer": "44,300",
+      "predicted_answer": "The city that contains the suburb of Beaumont (Beaumont, South\u202fAustralia) \u2013 the City of Burnside \u2013 has an estimated population of **about\u202f44,300\u202fpeople**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac313145542995ef918c0ed",
+      "agent_type": "react",
+      "gold_answer": "Beno\u00eet Jacquot",
+      "predicted_answer": "The 2012 film adaptation of Chantal\u202fThomas\u2019s book \u201cFarewell, My Queen\u201d was directed by **Beno\u00eet\u202fJacquot**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a881d2355429938390d3eeb",
+      "agent_type": "react",
+      "gold_answer": "Love and Theft",
+      "predicted_answer": "It was covered by the Lyric\u202fStreet Records\u2011affiliated country duo **Love\u202fand\u202fTheft**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a88940055429938390d3f7b",
+      "agent_type": "react",
+      "gold_answer": "Port Vila",
+      "predicted_answer": "Bauerfield International Airport is based out of **Port\u202fVila**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac2616b5542996366519997",
+      "agent_type": "react",
+      "gold_answer": "Ghana",
+      "predicted_answer": "Cudjoe \u2013 the Maroon leader \u2013 was born in **Jamaica**.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a83a30a5542992ef85e2339",
+      "agent_type": "react",
+      "gold_answer": "East division",
+      "predicted_answer": "Kyle\u202fSkipworth\u2019s MLB team was the **Miami Marlins**, who compete in the **National League\u202fEast division** of Major League Baseball.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a72953b5542994cef4bc357",
+      "agent_type": "react",
+      "gold_answer": "Tony Burke",
+      "predicted_answer": "The Labor member of the House of Representatives who was a member of Australian Young Labor is **Tony\u202fBurke**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab235ed5542993be8fa98c8",
+      "agent_type": "react",
+      "gold_answer": "Italian",
+      "predicted_answer": "The composer of **\u201cIphig\u00e9nie en\u202fAulide,\u201d Christoph\u202fWillibald\u202fGluck, was German.**",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abb9ad4554299642a094abe",
+      "agent_type": "react",
+      "gold_answer": "al-Qaeda",
+      "predicted_answer": "The battle was sparked by the **Taliban\u202f\u2014\u202fthe Islamic Emirate of Afghanistan**, whose rule and support for al\u2011Qaida led to the uprising at Qala\u2011i\u2011Jangi.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e1027554299653c1aa15f",
+      "agent_type": "react",
+      "gold_answer": "2009 Big 12 Conference",
+      "predicted_answer": "The Colorado Buffaloes posted a **2\u20116 conference record in the 2009 season**, playing in the **Big\u202f12 Conference**\u2014which was in its **14th season** as part of the NCAA Division\u202fI\u202fFBS.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7882b554299540e5a55dd",
+      "agent_type": "react",
+      "gold_answer": "great-grandfather",
+      "predicted_answer": "Fred\u202fGehrke is the great\u2011grandfather of Christian\u202fYelich, who was selected 23rd overall in the 2010 MLB Draft.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adf95745542995534e8c7f8",
+      "agent_type": "react",
+      "gold_answer": "in the village of Aldenham",
+      "predicted_answer": "\u015aivar\u0101ma\u202fSwami conducts his Vaishnava\u2011theology courses at **Bhaktivedanta\u202fManor** (the ISKCON centre in Aldenham, Hertfordshire, England).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac00f795542996f0d89cb16",
+      "agent_type": "react",
+      "gold_answer": "Alan Young",
+      "predicted_answer": "The Disney version of Ebenezer\u202fScrooge (voicing Scrooge\u202fMcDuck in *Mickey\u2019s Christmas Carol*) was performed by **Alan\u202fYoung**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3d764554299233954ffc7",
+      "agent_type": "react",
+      "gold_answer": "The Shirehorses",
+      "predicted_answer": "The spoof was created by the parody band **The Shirehorses** \u2013 the duo of BBC Radio\u202f1 DJs Mark\u202fRadcliffe and Marc\u202fRiley (aka \u201cMark and Lard\u201d).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ade914b55429939a52fe8f9",
+      "agent_type": "react",
+      "gold_answer": "\"Discover Pure Energy\"",
+      "predicted_answer": "The roller coaster that shares Manta\u2019s ride system is **Blue\u202fFire**, whose tagline is:\n\n**\u201cDiscover Pure Energy.\u201d**",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a71148b5542994082a3e567",
+      "agent_type": "react",
+      "gold_answer": "The population was 2,615",
+      "predicted_answer": "The Penobscot Marine Museum is located in Searsport, Maine, which had a population of **2,615** according to the 2010 census.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae2a9c6554299492dc91c42",
+      "agent_type": "react",
+      "gold_answer": "Tumi Holdings, Inc.",
+      "predicted_answer": "The manufacturer is **Tumi\u202fInc.**, a South\u202fPlainfield, New\u202fJersey\u2011based maker of suitcases and travel bags that has a store in the Shops at Columbus Circle.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a73b8d655429908901be31f",
+      "agent_type": "react",
+      "gold_answer": "Stony Brook University",
+      "predicted_answer": "University of New\u202fHampshire is farther north.\u202fIt is located in Durham, New\u202fHampshire (around 43\u00b0\u202fN latitude), while Stony\u202fBrook University is on Long Island, New\u202fYork (about 41\u00b0\u202fN latitude). Therefore, UNH lies at a higher latitude than Stony\u202fBrook University.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adbf84555429947ff17387c",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No. Adolfo\u202fBioy\u202fCasares was an Argentine writer, but James\u202fNorman\u202fHall was an American author.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab91f98554299753720f70d",
+      "agent_type": "react",
+      "gold_answer": "Gangsta's Paradise",
+      "predicted_answer": "The song is **\u201cGangsta\u2019s Paradise.\u201d** It appears on Coolio\u2019s greatest\u2011hits compilation *Fantastic\u202fVoyage* and it samples Stevie Wonder\u2019s 1976 track \u201cPastime\u202fParadise.\u201d",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a9094ba55429933b8a2056d",
+      "agent_type": "react",
+      "gold_answer": "Richard Gerald \"Dick\" Purcell Jr.",
+      "predicted_answer": "The title role was played by **Dick\u202fPurcell**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8b3c5b55429971feec4684",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No. Milk\u202fLake is in Taiwan, which is in Asia, but Larnaca\u202fSalt\u202fLake is on the island of Cyprus, which is geographically classified as part of Europe (Western\u202fAsia is sometimes mentioned, but in standard continental divisions Cyprus belongs to Europe). Therefore the two lakes are not both located in Asia.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a851b0d5542997175ce1f7f",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Both the Dogo\u202fCubano and the Dutch Shepherd are recognized as distinct breeds of dog.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab54056554299488d4d9923",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No. Yasuzo\u202fMasumura was a Japanese film director, while Pitof (Jean\u2011Christophe\u202fComar) is a French visual\u2011effects supervisor and director. They come from different countries and have different primary careers.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae829ea5542997ec2727738",
+      "agent_type": "react",
+      "gold_answer": "city of Springfield, Massachusetts",
+      "predicted_answer": "The Model\u202f1840 flintlock musket was produced at the Springfield Armory, which is located in Springfield, Massachusetts.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7af08655429931da12c989",
+      "agent_type": "react",
+      "gold_answer": "radionuclides",
+      "predicted_answer": "Caesium\u2011137, radium and uranium\u2011234 are all **radioactive isotopes (radionuclides)**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae5d19155429929b08079bc",
+      "agent_type": "react",
+      "gold_answer": "Velichko Todorov Tsochev) is a Bulgarian-Canadian",
+      "predicted_answer": "The 1971 film **Wake in\u202fFright** was directed by **Ted\u202fKotcheff**, who is **Bulgarian\u2011Canadian**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8db19d5542994ba4e3dd00",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Both Local\u202fH and For\u202fAgainst are American bands\u2014they originate from the United States.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adce0f455429947343537bd",
+      "agent_type": "react",
+      "gold_answer": "CBS Corporation",
+      "predicted_answer": "The crime drama \u201cNumb3rs\u201d is produced by **CBS** (the CBS Corporation), which is headquartered in New\u202fYork\u202fCity with major production facilities in both New\u202fYork\u202fCity and Los\u202fAngeles.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adfdef9554299025d62a36b",
+      "agent_type": "react",
+      "gold_answer": "Bath, Maine",
+      "predicted_answer": "The first governor after the Missouri Compromise was William\u202fKing, and he was from **Bath, Maine**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a716dc15542994082a3e82b",
+      "agent_type": "react",
+      "gold_answer": "Kirk Humphreys",
+      "predicted_answer": "Kirk\u202fHumphreys is younger; he was born on September\u202f13\u202f1950, whereas Tom\u202fCoburn was born earlier, on March\u202f14\u202f1948.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a78a7025542990784727710",
+      "agent_type": "react",
+      "gold_answer": "Jean-Marie Pfaff",
+      "predicted_answer": "Jean\u2011Marie\u202fPfaff is older; he was born on 4\u202fDecember\u202f1953, while Anne\u202fNo\u00eb was born on 13\u202fApril\u202f1959.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a893fc855429951533612f0",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No. The Chien\u202fFran\u00e7ais\u202fBlanc\u202fet\u202fOrange is explicitly described as \u201cused for hunting in packs.\u201d The Cretan Hound is simply described as a hunting breed; the provided information does not say that it hunts in packs.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab720685542993667793f44",
+      "agent_type": "react",
+      "gold_answer": "communist",
+      "predicted_answer": "Both Mir\u202fJafar\u202fBaghirov and Joseph\u202fStalin were believers in **communism\u2014specifically the Marxist\u2011Leninist doctrine**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80427c5542996402f6a49f",
+      "agent_type": "react",
+      "gold_answer": "Bill Miner",
+      "predicted_answer": "Frederick\u202fJohn\u202fFulton prosecuted the notorious stagecoach robber **Bill\u202fMiner**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a807181554299485f5985ec",
+      "agent_type": "reflexion",
+      "gold_answer": "Morning Edition",
+      "predicted_answer": "Bob\u202fEdwards was the original host of NPR\u2019s flagship program **\u201cMorning\u202fEdition,\u201d** a role later taken over by\u202fRen\u00e9e\u202fMontagne.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ed7b455429917b4a5bdd1",
+      "agent_type": "reflexion",
+      "gold_answer": "Guadalupe \"Lupe\" Ontiveros",
+      "predicted_answer": "The sitcom **\u201cRob\u201d** starred American actress **Lu\u202fP\u00e9\u202fOntiveros**, who is best known for portraying Yolanda\u202fSald\u00edvar in the film *Selena*.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a800ca555429969796c1bac",
+      "agent_type": "reflexion",
+      "gold_answer": "Plato",
+      "predicted_answer": "The philosopher is known mainly through the writings of **Plato**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae675245542991bbc9760dc",
+      "agent_type": "reflexion",
+      "gold_answer": "Merovech",
+      "predicted_answer": "The father of Childericus (Childeric\u202fI) was **Merovech**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab1e984554299340b525428",
+      "agent_type": "reflexion",
+      "gold_answer": "Gulangyu",
+      "predicted_answer": "Gulangyu is larger. Its island covers about\u202f2\u202fkm\u00b2, whereas the Asante Traditional Buildings consist of only 13 structures with no comparable land\u2011area size.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab21c3b554299722f9b4cb4",
+      "agent_type": "reflexion",
+      "gold_answer": "American",
+      "predicted_answer": "The author,\u202fSharyn\u202fMcCrumb, is an **American citizen**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae3d6bd5542991a06ce9a2b",
+      "agent_type": "reflexion",
+      "gold_answer": "10 Years",
+      "predicted_answer": "The album **\u201cFrom Birth to Burial\u201d** was released by the Knoxville, Tennessee\u2011based American band **10\u202fYears**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80a7f6554299485f598680",
+      "agent_type": "reflexion",
+      "gold_answer": "Dallas",
+      "predicted_answer": "They founded Neiman\u202fMarcus in **Dallas, Texas**, in 1907.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac415445542995c82c4acb7",
+      "agent_type": "reflexion",
+      "gold_answer": "Esther \"Essie\" Davis",
+      "predicted_answer": "Essie\u202fDavis portrayed Amelia\u202fVanek.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac43e0f554299076e296d8e",
+      "agent_type": "reflexion",
+      "gold_answer": "China",
+      "predicted_answer": "Both Dafeng District and Jixi are located in **China**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7622d75542994ccc9186f1",
+      "agent_type": "reflexion",
+      "gold_answer": "\"Leni\" Riefenstahl",
+      "predicted_answer": "Leni\u202fRiefenstahl was born earlier. She was born on\u202f22\u202fAugust\u202f1902, while Garry\u202fMarshall was born later, on\u202f13\u202fNovember\u202f1934.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74512b55429974ef308bd5",
+      "agent_type": "reflexion",
+      "gold_answer": "Hachette Filipacchi",
+      "predicted_answer": "The film magazine\u202f\u2014\u202f**Premiere**\u202f\u2014\u202fwas published by **Hachette\u202fFilipacchi\u202fMedia\u202fU.S.**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab5062f55429942dd415fd1",
+      "agent_type": "reflexion",
+      "gold_answer": "$60 million",
+      "predicted_answer": "The film is **ParaNorman**, and its budget was **$60\u202fmillion**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7f35015542992e7d278c8a",
+      "agent_type": "reflexion",
+      "gold_answer": "1754",
+      "predicted_answer": "Columbia College was founded in **1754**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae72c1e554299572ea54754",
+      "agent_type": "reflexion",
+      "gold_answer": "Faraway, So Close!",
+      "predicted_answer": "The sequel is **\u201cFaraway,\u202fSo\u202fClose!\u201d** (1993), which follows the 1987 German romantic\u2011fantasy film *Wings of Desire* starring Bruno\u202fGanz and Solveig\u202fDommartin.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abc2e1c554299700f9d7806",
+      "agent_type": "reflexion",
+      "gold_answer": "4",
+      "predicted_answer": "Johan\u202fMj\u00e4llby was born on\u202f9\u202fFebruary\u202f1971 and Neil\u202fLennon on\u202f25\u202fJune\u202f1971. The two birthdays are four full months apart.  \n\n**Answer: 4\u202fmonths.**",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ae4988655429970de88d9c1",
+      "agent_type": "reflexion",
+      "gold_answer": "The The",
+      "predicted_answer": "**The The** is the post\u2011punk band. Boy Hits Car is an alternative\u2011metal/rock group, while The\u202fThe is explicitly described as an English post\u2011punk band.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7905f555429974737f7947",
+      "agent_type": "reflexion",
+      "gold_answer": "second largest",
+      "predicted_answer": "Driss\u202fLachgar was born in Rabat, which\u2014according to the provided information\u2014is the capital of Morocco **and its second\u2011largest city**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a881cbb55429938390d3ee7",
+      "agent_type": "reflexion",
+      "gold_answer": "Hellenism",
+      "predicted_answer": "The rectory is built in the **Greek\u2011Revival** style, which itself is a product of **Hellenism** (the earlier Neoclassical movement).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae796af554299540e5a5623",
+      "agent_type": "reflexion",
+      "gold_answer": "Aden",
+      "predicted_answer": "The capital was temporarily moved to the port city of **Aden**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a733c925542991f9a20c6b7",
+      "agent_type": "reflexion",
+      "gold_answer": "cocktails",
+      "predicted_answer": "Both the Polar\u202fBear and the Daiquiri are examples of **cocktails**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7cea355429952e35ea9c1",
+      "agent_type": "reflexion",
+      "gold_answer": "Netflix",
+      "predicted_answer": "Netflix",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5adcca7f5542994ed6169c06",
+      "agent_type": "reflexion",
+      "gold_answer": "1961",
+      "predicted_answer": "The drummer on\u202f*Angel of Retribution*\u202fis Scott\u202fTravis, who was born in **1961**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a77d12755429967ab1052b8",
+      "agent_type": "reflexion",
+      "gold_answer": "Jaap Speyer",
+      "predicted_answer": "Jaap\u202fSpeyer was born first; he was born in\u202f1891, whereas Bruce\u202fConner was born in\u202f1933.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1465855429920d5234373",
+      "agent_type": "reflexion",
+      "gold_answer": "New York Yankees",
+      "predicted_answer": "Berk Communication and Marketing Group is best known for representing pitcher **CC\u202fSabathia**, who plays for the **New\u202fYork\u202fYankees**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1bf46554299234fd042e6",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Both **Jack\u202fand\u202fCoke** (Jack\u202fDaniel\u2019s whiskey\u202f+\u202fCoca\u2011Cola) and the **Clover\u202fClub Cocktail** (gin, lemon juice, raspberry syrup, and egg white) are classified as cocktails.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae195bf5542997b2ef7d207",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Both the Galata Tower and the S\u00fcleymaniye Mosque are located in Istanbul, Turkey.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8f2ba155429918e830d1b9",
+      "agent_type": "reflexion",
+      "gold_answer": "Hong Kong Disneyland",
+      "predicted_answer": "The theme park was **Hong\u202fKong\u202fDisneyland**, which opened on 12\u202fSeptember\u202f2005 and was viewed as a competitor to Ocean\u202fPark Hong\u202fKong.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3357d554299166977419d",
+      "agent_type": "reflexion",
+      "gold_answer": "London",
+      "predicted_answer": "The parent company of Sterlite Industries, Vedanta Resources plc, is headquartered in **London**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac42a64554299076e296d7b",
+      "agent_type": "reflexion",
+      "gold_answer": "1927",
+      "predicted_answer": "Clipper\u202fCargo\u2019s parent airline, Pan American World Airways, was founded in **1927**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae361805542992e3233c3c9",
+      "agent_type": "reflexion",
+      "gold_answer": "Georgetown University",
+      "predicted_answer": "Greg\u202fMonroe attended **Georgetown University**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a78c66e55429974737f787b",
+      "agent_type": "reflexion",
+      "gold_answer": "Wu-Tang Clan",
+      "predicted_answer": "Masta\u202fKilla released **\u201cSelling My Soul\u201d** as a member of the **Wu\u2011Tang Clan**.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a8f25ed5542997ba9cb31f0",
+      "agent_type": "reflexion",
+      "gold_answer": "The bald eagle",
+      "predicted_answer": "The wintering area around Brackendale is famous for its **Bald eagles**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a848a685542997b5ce3feae",
+      "agent_type": "reflexion",
+      "gold_answer": "President John F. Kennedy",
+      "predicted_answer": "The wife of the 1972 Democratic vice\u2011presidential nominee (Sargent\u202fShriver) was Eunice\u202fKennedy\u202fShriver. One of her brothers was **John\u202fF.\u202fKennedy**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd0553554299700f9d7963",
+      "agent_type": "reflexion",
+      "gold_answer": "Marks and Spencer plc",
+      "predicted_answer": "Archie\u202fNorman is set to succeed Robert\u202fSwannell as chairman of **Marks\u202f&\u202fSpencer plc**, the British multinational retailer headquartered in the City of Westminster, London.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae07b0155429945ae95935d",
+      "agent_type": "reflexion",
+      "gold_answer": "Paul Thomas Mann",
+      "predicted_answer": "Thomas\u202fMann was the German novelist. David\u202fGuterson is American.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae6545f5542991bbc9760c2",
+      "agent_type": "reflexion",
+      "gold_answer": "Dylan O'Brien",
+      "predicted_answer": "The co\u2011star is **Dylan\u202fO\u2019Brien**.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a83eaae55429933447460b4",
+      "agent_type": "reflexion",
+      "gold_answer": "relations between Switzerland and the European Union",
+      "predicted_answer": "It is an example of **Switzerland\u202f\u2013\u202fEuropean Union relations** \u2013 the set of bilateral treaties that frame the relationship between Switzerland and the EU.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a7663665542992d0ec060d3",
+      "agent_type": "reflexion",
+      "gold_answer": "The 2018 Texas gubernatorial election",
+      "predicted_answer": "The Texas gubernatorial election\u202f\u2014\u202fthe 2018 Texas governor\u2019s race\u2014was held on the same day as the 2018 United\u202fStates Senate election in Texas.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a88ac3d554299206df2b328",
+      "agent_type": "reflexion",
+      "gold_answer": "Dutch",
+      "predicted_answer": "Both Eric\u202fLucassen and the Party for Freedom originate from the **Netherlands**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab84bab55429934fafe6d49",
+      "agent_type": "reflexion",
+      "gold_answer": "Raimond Gaita",
+      "predicted_answer": "The film \u201cRomulus, My Father\u201d is based on the memoir written by **Raimond\u202fGaita**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add1c485542992c1e3a253d",
+      "agent_type": "reflexion",
+      "gold_answer": "wineries",
+      "predicted_answer": "A major local industry is wine production \u2013 the surrounding Southern Highlands (e.g., nearby Mittagong) is known for its many wineries and cellar\u2011door operations.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae520315542993aec5ec152",
+      "agent_type": "reflexion",
+      "gold_answer": "Taylor Swift",
+      "predicted_answer": "Liz\u202fRose co\u2011wrote those songs with **Taylor\u202fSwift**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8887a055429938390d3f72",
+      "agent_type": "reflexion",
+      "gold_answer": "Rocky Boy's Indian Reservation",
+      "predicted_answer": "The reservation is **Rocky\u202fBoy\u2019s Indian Reservation**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abc36cc55429959677d6a50",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. In 1998 **Life** was being issued as a monthly magazine (its monthly run lasted from 1978 to 2000), and **Strictly\u202fSlots**\u2014which was founded in 1998\u2014was also a monthly publication.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae08a0455429924de1b70fc",
+      "agent_type": "reflexion",
+      "gold_answer": "Enigma",
+      "predicted_answer": "The German project is **Enigma** \u2013 its song \u201cAmen\u201d features vocals by the Silverdale duo Aquilo.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae1f3df554299234fd04364",
+      "agent_type": "reflexion",
+      "gold_answer": "at age 27",
+      "predicted_answer": "Janis\u202fJoplin died at age\u202f27.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ae129115542990adbacf722",
+      "agent_type": "reflexion",
+      "gold_answer": "Francis McPeake",
+      "predicted_answer": "Both \u201cA\u202fPair\u202fof\u202fBrown\u202fEyes\u201d and \u201cWild\u202fMountain\u202fThyme\u201d use the melody of the folk classic **\u201cWild\u202fMountain\u202fThyme\u201d (aka \u201cWill\u202fYe\u202fGo\u202fLassie\u202fGo?\u201d) written by Francis\u202fMcPeake**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adf9d135542995534e8c817",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No.\u202fDes\u202fMoines International Airport is a regional airport that offers many connections to other hubs, but it isn\u2019t itself classified as a major airline hub.\u202fGrand Canyon National\u202fPark Airport is a small, tourism\u2011focused field used mainly for scenic tours and limited scheduled service, and it is not a hub for any major airline either.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae470815542996836b02c9f",
+      "agent_type": "reflexion",
+      "gold_answer": "The Virgin Queen",
+      "predicted_answer": "The nickname was **\u201cThe Virgin Queen.\u201d**",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a72ac8a5542992359bc3164",
+      "agent_type": "reflexion",
+      "gold_answer": "The Dundee Canal",
+      "predicted_answer": "The Dundee Canal required the more intensive man\u2011made barriers.  \n\n- The Dundee Canal was an **industrial canal** built to **supply hydropower and water for manufacturing**\u3010...\u3011, indicating substantial engineered structures to control water flow.  \n- By contrast, the Lake\u202fWorth Lagoon is linked to the ocean by only **two permanent, man\u2011made inlets**\u3010...\u3011, which are relatively simple connections.  \n\nThus, the canal\u2019s industrial purpose demanded a greater degree of engineered barrier work than the lagoon\u2019s two inlets.",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5ae406245542995dadf242e2",
+      "agent_type": "reflexion",
+      "gold_answer": "20",
+      "predicted_answer": "St.\u202fJude Medical had **20** principal operations worldwide.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a7db62d5542997cc2c4747c",
+      "agent_type": "reflexion",
+      "gold_answer": "Baden-W\u00fcrttemberg",
+      "predicted_answer": "Karl\u202fJulius\u202fPerleb was born in Konstanz, which is in the German state of **Baden\u2011W\u00fcrttemberg**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7c5ef5542993210983f44",
+      "agent_type": "reflexion",
+      "gold_answer": "Gainesville, Florida",
+      "predicted_answer": "The band Against\u202fMe! is from **Gainesville, Florida**, a town in North\u2011Central Florida.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abe65e25542993f32c2a101",
+      "agent_type": "reflexion",
+      "gold_answer": "Stanford University",
+      "predicted_answer": "The key figure is **Jason\u202fCollins**, who was drafted 18th overall (in 2001) and later played for the New\u202fJersey Nets. Before being drafted, he paid for his education at **Stanford University**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab5052a5542990594ba9ccf",
+      "agent_type": "reflexion",
+      "gold_answer": "Gabriella Montez",
+      "predicted_answer": "The new permanent member, Vanessa\u202fHudgens, portrayed **Gabriella\u202fMontez** in the *High\u202fSchool\u202fMusical* series.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae0c1be5542993d6555ec42",
+      "agent_type": "reflexion",
+      "gold_answer": "Academy Award for Best Art Direction",
+      "predicted_answer": "The 2008 American romantic drama film directed by David\u202fFincher \u2013 **\u201cThe Curious Case of Benjamin Button\u201d** \u2013 won the **Academy Award for Best Art Direction**.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a78f89055429974737f792b",
+      "agent_type": "reflexion",
+      "gold_answer": "physics",
+      "predicted_answer": "John\u202fvon\u202fNeumann\u2019s *Mathematical Foundations of Quantum Mechanics* delves into the **mathematical foundations of quantum theory**, developing the subject through the tools of **functional analysis**\u2014in particular the theory of infinite\u2011dimensional Hilbert spaces and operators acting on them.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a75e814554299109176e5c7",
+      "agent_type": "reflexion",
+      "gold_answer": "Gregg Harper",
+      "predicted_answer": "The Republican Chairman born on\u202fJune\u202f1,\u202f1956, is **Gregg Harper**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac4fbe255429924173fb53b",
+      "agent_type": "reflexion",
+      "gold_answer": "Jeffrey Adam \"Duff\" Goldman",
+      "predicted_answer": "Duff Goldman.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac25fa955429951e9e6858c",
+      "agent_type": "reflexion",
+      "gold_answer": "design, development, manufacture",
+      "predicted_answer": "The company\u2019s main business is the **design, development, manufacture and sale of vehicles under the Jaguar and Land Rover (including Range Rover) brands**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a735c3a55429901807daff7",
+      "agent_type": "reflexion",
+      "gold_answer": "mathematician",
+      "predicted_answer": "Both Nikolay\u202fMitrofanovich\u202fKrylov and Anatoly\u202fFomenko were mathematicians.",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a7e6f295542991319bc94b1",
+      "agent_type": "reflexion",
+      "gold_answer": "Pope John X",
+      "predicted_answer": "Pope\u202fJohn\u202fX bestowed the title \u201cpatricia\u201d of Rome on Marozia, the mother of Alberic\u202fII of Spoleto.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a88fa1c5542995153361219",
+      "agent_type": "reflexion",
+      "gold_answer": "1966",
+      "predicted_answer": "Barry\u202fMurphy earned his sole cap under Jack\u202fCharlton, who was a member of England\u2019s World Cup\u2011winning side in **1966**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adfa1f9554299025d62a308",
+      "agent_type": "reflexion",
+      "gold_answer": "William Maldon \"Bill\" Woodfull",
+      "predicted_answer": "The captain was **William\u202fMaldon\u202fWoodfull** (commonly known as Bill Woodfull).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7473f5542991bbc9761d2",
+      "agent_type": "reflexion",
+      "gold_answer": "44,300",
+      "predicted_answer": "The suburb of Beaumont is located within the City of Burnside, which has an estimated population of **44,300** people.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ac313145542995ef918c0ed",
+      "agent_type": "reflexion",
+      "gold_answer": "Beno\u00eet Jacquot",
+      "predicted_answer": "The 2012 film adaptation of Chantal\u202fThomas\u2019s novel was directed by **Beno\u00eet\u202fJacquot**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a881d2355429938390d3eeb",
+      "agent_type": "reflexion",
+      "gold_answer": "Love and Theft",
+      "predicted_answer": "It was covered by the Lyric\u202fStreet Records\u2011affiliated country duo **Love\u202fand\u202fTheft**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a88940055429938390d3f7b",
+      "agent_type": "reflexion",
+      "gold_answer": "Port Vila",
+      "predicted_answer": "Bauerfield International Airport is based out of **Port\u202fVila**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac2616b5542996366519997",
+      "agent_type": "reflexion",
+      "gold_answer": "Ghana",
+      "predicted_answer": "Ghana.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a83a30a5542992ef85e2339",
+      "agent_type": "reflexion",
+      "gold_answer": "East division",
+      "predicted_answer": "Kyle\u202fSkipworth\u2019s MLB team, the Miami\u202fMarlins, play in Major League Baseball\u2019s **National League East division**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a72953b5542994cef4bc357",
+      "agent_type": "reflexion",
+      "gold_answer": "Tony Burke",
+      "predicted_answer": "The Labor member of the Australian House of Representatives who was a member of Australian Young\u202fLabor is **Tony\u202fBurke**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab235ed5542993be8fa98c8",
+      "agent_type": "reflexion",
+      "gold_answer": "Italian",
+      "predicted_answer": "The composer, Christoph\u202fWillibald\u202fGluck, is described as a \u201ccomposer of Italian\u2026 opera,\u201d indicating his nationality as **Italian**.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5abb9ad4554299642a094abe",
+      "agent_type": "reflexion",
+      "gold_answer": "al-Qaeda",
+      "predicted_answer": "The battle was caused by an uprising of prisoners who were alleged to be **al\u2011Qaeda** operatives.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a8e1027554299653c1aa15f",
+      "agent_type": "reflexion",
+      "gold_answer": "2009 Big 12 Conference",
+      "predicted_answer": "The Colorado Buffaloes posted a 2\u20116 conference record in **2009**, playing in the **Big\u202f12 Conference**\u2014the 2009 season was the conference\u2019s 14th season as part of NCAA Division\u202fI\u2011FBS.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae7882b554299540e5a55dd",
+      "agent_type": "reflexion",
+      "gold_answer": "great-grandfather",
+      "predicted_answer": "Fred\u202fGehrke is the great\u2011grandfather of Christian\u202fYelich, the player taken 23rd overall in the 2010 MLB Draft.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adf95745542995534e8c7f8",
+      "agent_type": "reflexion",
+      "gold_answer": "in the village of Aldenham",
+      "predicted_answer": "\u015aivar\u0101ma\u202fSwami conducts his Vaishnava\u2011theology courses at **Bhaktivedanta\u202fManor** \u2013 the ISKCON temple and retreat in Aldenham, Hertfordshire, England.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac00f795542996f0d89cb16",
+      "agent_type": "reflexion",
+      "gold_answer": "Alan Young",
+      "predicted_answer": "The Disney version of Ebenezer\u202fScrooge (voiced by Scrooge\u202fMcDuck in *Mickey\u2019s Christmas Carol*) was performed by **Alan\u202fYoung**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3d764554299233954ffc7",
+      "agent_type": "reflexion",
+      "gold_answer": "The Shirehorses",
+      "predicted_answer": "The spoof was created by the comedy\u2011rock duo **The\u202fShirehorses** (BBC Radio\u202f1 DJs Mark\u202fRadcliffe and Marc\u202fRiley). Their album *Our Kid Eh* parodies Radiohead\u2019s fourth studio album *Kid\u202fA*.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ade914b55429939a52fe8f9",
+      "agent_type": "reflexion",
+      "gold_answer": "\"Discover Pure Energy\"",
+      "predicted_answer": "The roller coaster that shares Manta\u2019s ride system is **Blue\u202fFire**, and its tagline is:\n\n**\u201cDiscover Pure Energy.\u201d**",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a71148b5542994082a3e567",
+      "agent_type": "reflexion",
+      "gold_answer": "The population was 2,615",
+      "predicted_answer": "The Penobscot Marine Museum is located in Searsport, Maine, whose population was **2,615** (according to the 2010 census).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae2a9c6554299492dc91c42",
+      "agent_type": "reflexion",
+      "gold_answer": "Tumi Holdings, Inc.",
+      "predicted_answer": "The manufacturer is **Tumi\u202fInc.**, a South\u202fPlainfield, New\u202fJersey\u2011based maker of suitcases and travel bags that has a store in the Shops at Columbus Circle.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a73b8d655429908901be31f",
+      "agent_type": "reflexion",
+      "gold_answer": "Stony Brook University",
+      "predicted_answer": "University of New Hampshire is farther north.\n\n- **University of New Hampshire (Durham, NH)** \u2013 latitude \u2248\u202f43.1\u00b0\u202fN  \n- **Stony Brook University (Stony Brook, NY)** \u2013 latitude \u2248\u202f40.9\u00b0\u202fN  \n\nSince 43.1\u00b0\u202fN\u202f>\u202f40.9\u00b0\u202fN, the University of New Hampshire lies at the higher latitude and is therefore the more northern campus.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5adbf84555429947ff17387c",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No.\u202fAdolfo\u202fBioy\u202fCasares was an Argentine writer, but James\u202fNorman\u202fHall was an American author.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab91f98554299753720f70d",
+      "agent_type": "reflexion",
+      "gold_answer": "Gangsta's Paradise",
+      "predicted_answer": "The song is **\u201cGangsta\u2019s Paradise.\u201d** It appears on Coolio\u2019s greatest\u2011hits compilation *Fantastic\u202fVoyage* and it samples Stevie Wonder\u2019s 1976 track \u201cPastime\u202fParadise.\u201d",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a9094ba55429933b8a2056d",
+      "agent_type": "reflexion",
+      "gold_answer": "Richard Gerald \"Dick\" Purcell Jr.",
+      "predicted_answer": "The title role was played by **Dick\u202fPurcell**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8b3c5b55429971feec4684",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No.\u202fMilk\u202fLake is in Taipei, Taiwan \u2013 which is in Asia.\u202fLarnaca\u202fSalt\u202fLake is on the island of Cyprus, which is geographically classified as part of Europe, so the two lakes are not both located in Asia.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a851b0d5542997175ce1f7f",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Both the Dogo\u202fCubano and the Dutch Shepherd are recognized as distinct breeds of dog.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab54056554299488d4d9923",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No. Yasuzo\u202fMasumura was a Japanese film director, while Pitof (Jean\u2011Christophe\u202fComar) is a French visual\u2011effects supervisor who also directs. They come from different countries and have different primary professional roles.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae829ea5542997ec2727738",
+      "agent_type": "reflexion",
+      "gold_answer": "city of Springfield, Massachusetts",
+      "predicted_answer": "The Model\u202f1840 flintlock musket was manufactured at the **Springfield Armory**, which is located in **Springfield, Massachusetts**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7af08655429931da12c989",
+      "agent_type": "reflexion",
+      "gold_answer": "radionuclides",
+      "predicted_answer": "Caesium\u2011137, radium and uranium\u2011234 are all **radioactive isotopes (radionuclides)**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae5d19155429929b08079bc",
+      "agent_type": "reflexion",
+      "gold_answer": "Velichko Todorov Tsochev) is a Bulgarian-Canadian",
+      "predicted_answer": "The director, Ted\u202fKotcheff, is **Bulgarian\u2011Canadian**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8db19d5542994ba4e3dd00",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes. Both Local\u202fH and For\u202fAgainst are American bands\u2014they were formed in Illinois and Nebraska, respectively, and are described as being from the United States.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adce0f455429947343537bd",
+      "agent_type": "reflexion",
+      "gold_answer": "CBS Corporation",
+      "predicted_answer": "The crime drama \u201cNumb3rs\u201d is produced by **CBS (the CBS\u202fCorporation)**, which is headquartered in New\u202fYork\u202fCity and also has major production facilities in Los\u202fAngeles.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adfdef9554299025d62a36b",
+      "agent_type": "reflexion",
+      "gold_answer": "Bath, Maine",
+      "predicted_answer": "The first governor after the Missouri Compromise was William\u202fKing, who was from **Bath, Maine**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a716dc15542994082a3e82b",
+      "agent_type": "reflexion",
+      "gold_answer": "Kirk Humphreys",
+      "predicted_answer": "Kirk\u202fHumphreys is younger; he was born on September\u202f13\u202f1950, whereas Tom\u202fCoburn was born earlier, on March\u202f14\u202f1948.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a78a7025542990784727710",
+      "agent_type": "reflexion",
+      "gold_answer": "Jean-Marie Pfaff",
+      "predicted_answer": "Jean\u2011Marie\u202fPfaff is older; he was born on\u202f4\u202fDecember\u202f1953, whereas Anne\u202fNo\u00eb was born on\u202f13\u202fApril\u202f1959.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a893fc855429951533612f0",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No. The Chien\u202fFran\u00e7ais\u202fBlanc\u202fet\u202fOrange is explicitly described as \u201cused for hunting in packs.\u201d The information given about the Cretan Hound does not say that it is employed in pack hunting, so only the French hound is known to be used in packs.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab720685542993667793f44",
+      "agent_type": "reflexion",
+      "gold_answer": "communist",
+      "predicted_answer": "Both Mir\u202fJafar\u202fBaghirov and Joseph\u202fStalin were staunch believers in **communism\u2014specifically the Marxist\u2011Leninist ideology**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a80427c5542996402f6a49f",
+      "agent_type": "reflexion",
+      "gold_answer": "Bill Miner",
+      "predicted_answer": "Frederick\u202fJohn\u202fFulton prosecuted the notorious stagecoach robber **Bill\u202fMiner**.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    }
+  ],
+  "extensions": [
+    "structured_evaluator",
+    "reflection_memory",
+    "benchmark_report_json",
+    "mock_mode_for_autograding"
+  ],
+  "discussion": "Reflexion helps when the first attempt stops after the first hop or drifts to a wrong second-hop entity. The tradeoff is higher attempts, token cost, and latency. In a real report, students should explain when the reflection memory was useful, which failure modes remained, and whether evaluator quality limited gains."
+}
